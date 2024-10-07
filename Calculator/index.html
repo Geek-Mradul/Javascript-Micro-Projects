@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <div class="display">
+                <input readonly="true" class="input" name="eqn" type="text" value="">
+            </div>
+            <div>
+                <input onclick="eqn.value = '' " class="button" type="button" value="AC">
+                <input onclick="eqn.value = 'LOL I dont know' " class="button" type="button" value="%">
+                <input onclick="eqn.value += '/' " class="button" type="button" value="/">
+                <input onclick="eqn.value += '*' " class="button" type="button" value="*">
+            </div>
+            <div>
+                <input onclick="eqn.value += '7' " class="button" type="button" value="7">
+                <input onclick="eqn.value += '8' " class="button" type="button" value="8">
+                <input onclick="eqn.value += '9' " class="button" type="button" value="9">
+                <input onclick="eqn.value += '-' " class="button" type="button" value="-">
+            </div>
+            <div>
+                <input onclick="eqn.value += '4' " class="button" type="button" value="4">
+                <input onclick="eqn.value += '5' " class="button" type="button" value="5">
+                <input onclick="eqn.value += '6' " class="button" type="button" value="6">
+                <input onclick="eqn.value += '+' " class="button" type="button" value="+">
+            </div>
+            <div>
+                <input onclick="eqn.value += '1' " class="button" type="button" value="1">
+                <input onclick="eqn.value += '2' " class="button" type="button" value="2">
+                <input onclick="eqn.value += '3' " class="button" type="button" value="3">
+                <input onclick="eqn.value = eqn.value.slice(0,-1)" class="button" type="button" value="DEL">
+            </div>
+            <div>
+                <input onclick="eqn.value += '00' " class="button" type="button" value="00">
+                <input onclick="eqn.value += '0' " class="button" type="button" value="0">
+                <input onclick="eqn.value += '.' " class="button" type="button" value=".">
+                <input onclick="eqn.value = eval(eqn.value)" class="button" type="button" value="=">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

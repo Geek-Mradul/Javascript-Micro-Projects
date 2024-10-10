@@ -95,9 +95,17 @@
 }
 
 @media only screen and (max-width: 950px) {
+    .span {
+        display: none;
+    }
+
+    span {
+        margin: 25px 0px;
+    }
+
     .container {
-        height: 600px;
-        width: 200px;
+        height: 500px;
+        width: 180px;
     }
 
     .clock {

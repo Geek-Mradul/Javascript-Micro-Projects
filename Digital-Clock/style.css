@@ -24,9 +24,10 @@
 
 }
 
-.container span {
+.clock span {
     font-size: 5rem;
     margin-left: 30px;
+    transform: translateY(-10px);
 }
 
 .clock {
@@ -100,7 +101,7 @@
     }
 
     span {
-        margin: 25px 0px;
+        margin: 25px 20px 25px 0px;
     }
 
     .container {
